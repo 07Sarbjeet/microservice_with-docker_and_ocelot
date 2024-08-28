@@ -1,0 +1,28 @@
+version: '3.4'
+
+services:
+  product-microservice:
+    image: ${DOCKER_REGISTRY-}productmicroservice
+    build:
+      context: .
+      dockerfile: product-microservice/Dockerfile
+  # sql:
+  #  image: "mcr.microsoft.com/mssql/server:2022-latest"
+  #  container_name: sql_server2022
+  #  environment:
+  #  - ACCEPT_EULA=y
+  #  - SA_PASSWORD=sql123
+
+  user-microservice:
+    image: ${DOCKER_REGISTRY-}usermicroservice
+    build:
+      context: .
+      dockerfile: user-microservice/Dockerfile
+
+
+  ocelot-api-gateway:
+    image: ${DOCKER_REGISTRY-}ocelotapigateway
+    build:
+      context: .
+      dockerfile: ocelot-api-gateway/Dockerfile
+

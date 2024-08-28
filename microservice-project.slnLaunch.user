@@ -1,0 +1,26 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Name": "product-microservice\\product-microservice.csproj",
+        "Action": "Start",
+        "DebugTarget": "http"
+      },
+      {
+        "Name": "user-microservice\\user-microservice.csproj",
+        "Action": "Start",
+        "DebugTarget": "http"
+      },
+      {
+        "Name": "ocelot-api-gateway\\ocelot-api-gateway.csproj",
+        "Action": "Start",
+        "DebugTarget": "http"
+      },
+      {
+        "Name": "docker-compose.dcproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

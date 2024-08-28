@@ -1,0 +1,16 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "composeLaunchAction": "LaunchBrowser",
+      "composeLaunchServiceName": "product-microservice",
+      "composeLaunchUrl": "{Scheme}://localhost:{ServicePort}/swagger",
+      "serviceActions": {
+        "product-microservice": "StartDebugging",
+        "user-microservice": "StartDebugging",
+        "ocelot-api-gateway": "StartDebugging"
+      }
+    }
+  }
+}
